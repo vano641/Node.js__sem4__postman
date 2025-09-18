@@ -1,0 +1,48 @@
+Сервер будет сам автоматически перезапускаться при внесении изменений в файл
+npm install -g nodemon
+nodemon index.js
+
+Задание №1 (тайминг 5 минут)
+    Для реализации сервера, который позволяет получать, создавать,
+    обновлять и удалять пользователей, необходимо определить, какие
+    роуты будут у сервера.
+    Нужно написать список роутов и их методов, которые позволят
+    работать с пользователями, а также написать небольшой
+    комментарий с пояснением того, для чего роут нужен.
+Пример:
+    GET /objects/:id - позволяет получить что-то
+
+endpoint
+
+GET /users получение всех пользователей
+
+GET /users/:id получение одного пользователя
+
+POST /users создает пользователя (+ id)
+
+PUT /users:id обновляем одного пользователя
+
+DELETE /users/:id удаляем одного пользователя
+
+Работа В POSTMAN:
+1. Создаем коллекцию Seminar4
+2. Создаем запрос Get all users (GET http://localhost:3000/users нажимаем Send)
+3. Создаем запрос Create user (GET http://localhost:3000/users)
+        - В Body выбираем rew и JSON:
+            {
+                "firstName": "Artem",
+                "secondName": "Mysovsky",
+                "age": 7,
+                "city": "Saint-Peterburg"
+            }
+        - нажимаем Send, проверить создание можно Первым методом Get all users
+4. Создаем запрос Update user (GET http://localhost:3000/users/1 указываем id user для обновления)
+        - В Body выбираем rew и JSON и вносим изменения:
+            {
+                "firstName": "Ivan",
+                "secondName": "Mysovsky",
+                "age": 36,
+                "city": "Saint-Peterburg"
+            }
+        - нажимаем Send, проверить создание можно Первым методом Get all users
+5. Создаем запрос Get single user (GET http://localhost:3000/users/2 указываем id user для получения данных выбранного user нажимаем Send)
