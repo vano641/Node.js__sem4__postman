@@ -51,7 +51,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"firstName\": \"Ivan\",\r\n    \"secondName\": \"Mysovsky\",\r\n    \"age\": 25,\r\n    \"city\": \"Moscow\"\r\n}",
+					"raw": "{\r\n    \"firstName\": \"\",\r\n    \"secondName\": \"Mysovsky\",\r\n    \"age\": 25,\r\n    \"city\": \"Moscow\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
