@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "dbd0f963-70ed-45ad-8c38-37d207877fb5",
+		"name": "Seminar4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all users",
+			"id": "0c4bb0b3-7234-43df-a083-165275b1eabd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"id": "ae2320bb-0db5-4942-b808-e9d5170712b9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Ivan\",\r\n    \"secondName\": \"Mysovsky\",\r\n    \"age\": 36,\r\n    \"city\": \"Saint-Peterburg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"id": "4182e240-2355-499e-9bd6-7e966bd73794",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Ivan\",\r\n    \"secondName\": \"Mysovsky\",\r\n    \"age\": 25,\r\n    \"city\": \"Moscow\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get single user",
+			"id": "97e0620e-c055-441a-b08f-207afb7567be",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/users/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"id": "efa8feae-d94c-45a0-a646-fa6514a4d6ce",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Ivan\",\r\n    \"secondName\": \"Mysovsky\",\r\n    \"age\": 36,\r\n    \"city\": \"Saint-Peterburg\"\r\n}"
+				},
+				"url": "http://localhost:3000/users/1"
+			},
+			"response": []
+		}
+	]
+}
